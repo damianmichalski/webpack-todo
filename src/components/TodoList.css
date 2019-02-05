@@ -1,17 +1,15 @@
 .TodoList {
   list-style-type: none;
   padding: 0;
-  font-family: 'Playfair Display';
 }
 .TodoList li {
-  width: 250px;
-  height: 24px;
-  margin: 2px;
-  border: 1px dotted #222;
-  padding: 6px 10px;
-  background: rgba(255,255,255,0.7);
+  width: 200px;
+  height: 20px;
+  margin: 10px;
+  border: 1px solid #222;
+  padding: 10px 10px;
 }
-.TodoList li span {
+.TodoList li i {
   font-size: 14px;
   margin-right: 10px;
 }

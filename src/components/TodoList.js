@@ -5,7 +5,7 @@ const TodoList = (props) => {
   let listElements = props.item.map(function(element) {
     return (
         <li onClick={() => {props.remove(element.id)}} key={element.id}>
-          <span className="far fa-clock"></span>
+          <i class="fas fa-user-clock"></i>
           {element.text}
         </li>)
   })
