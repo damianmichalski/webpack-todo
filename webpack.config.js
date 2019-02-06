@@ -4,8 +4,7 @@ module.exports = {
   mode: 'development',
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'build'),
-    filename: 'app.bundle.js'
+    path: path.resolve(__dirname, 'build'), filename: 'app.bundle.js'
   },
   module: {
     rules: [
@@ -19,7 +18,7 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          { loader: 'style-loader'},
+          {loader: 'style-loader'},
           {
             loader: 'css-loader',
             options: {
