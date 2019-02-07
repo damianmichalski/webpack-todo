@@ -8,15 +8,16 @@ const plugins = [new HtmlWebpackPlugin({
 })];
 
 module.exports = (env) => {
-  if (env === 'production') {
+
+  const environment = env || 'production';
+
+  if (environment === 'production') {
     plugins.push(
         new OptimizeJsPlugin({
           sourceMap: false
         })
     )
   };
-
-  const environment = env || 'production';
 
   return {
     mode: environment,
@@ -54,6 +55,6 @@ module.exports = (env) => {
         }
       ]
     },
-    plugins: plugins
+    plugins
   }
 };
