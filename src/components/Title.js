@@ -4,8 +4,8 @@ class Title extends React.Component {
   render() {
     return (
         <div className="title">
-          <h1>To do title</h1>
-          <h2>Tasks numbers: {this.props.itemTitle.length}</h2>
+          <h1>{this.props.title}</h1>
+          <p>Ilość zadań: {this.props.count}</p>
         </div>
     );
   }
